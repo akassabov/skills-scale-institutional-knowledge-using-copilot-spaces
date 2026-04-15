@@ -14,11 +14,31 @@ Applies to all cross-functional projects that deliver product features, services
 - Psychological safety: encourage feedback and learning.
 
 ## Core Roles
-- Project Manager (PM): coordinates delivery, schedules, risk, communications.
-- Product Manager (PdM): defines outcomes, prioritizes backlog, and measures success.
-- Developers: implement features, collaborate on design and testability.
-- QA/Testing: validate quality and acceptance criteria.
-- Stakeholders: provide inputs and approvals.
+
+All OctoAcme projects are staffed with some or all of the following roles depending on project complexity and type. See [Roles & Personas](octoacme-roles-and-personas.md) for full descriptions.
+
+- **Project Manager (PM):** coordinates delivery, schedules, risk, communications.
+- **Product Manager (PdM):** defines outcomes, prioritizes backlog, and measures success.
+- **Developers:** implement features, collaborate on design and testability.
+- **QA/Testing:** validate quality and acceptance criteria.
+- **UX Designer:** designs user-centric interfaces and advocates for user needs throughout the lifecycle.
+- **Release Manager:** plans, schedules, and coordinates production releases.
+- **Data Analyst:** defines and monitors project metrics and KPIs; supports data-informed decisions.
+- **Site Reliability Engineer (SRE):** ensures system reliability, scalability, and rapid incident response.
+- **Customer Support Lead:** brings customer feedback into planning and ensures support readiness for releases.
+- **Stakeholders:** provide inputs and approvals.
+
+## When to Engage Each Role
+
+Different project types require different role involvement. Use the guidance below to ensure the right personas are engaged at the right time.
+
+| Project Type                | Always Engage                                | Also Consider                                      |
+|-----------------------------|----------------------------------------------|----------------------------------------------------|
+| New customer-facing feature | PM, PdM, Developers, QA, UX Designer        | Data Analyst (metrics), Support Lead (readiness)   |
+| Infrastructure / reliability | PM, Developers, SRE                         | Release Manager (deploy coordination)              |
+| Data / analytics initiative | PM, PdM, Data Analyst, Developers           | QA (data validation), SRE (pipeline reliability)  |
+| Hotfix / incident response  | PM, Developers, SRE, Release Manager        | Support Lead (customer comms), QA (smoke tests)    |
+| Major release               | All roles                                    | —                                                  |
 
 ## Key Artifacts
 - Project Charter / One-pager

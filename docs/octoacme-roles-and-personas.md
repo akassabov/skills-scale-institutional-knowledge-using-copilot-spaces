@@ -219,7 +219,63 @@ The following roles interact in key ways throughout the project lifecycle:
 
 ---
 
+## Role Collaboration Matrix by Project Phase
+
+The table below shows which roles are actively engaged at each phase of the project lifecycle. **R** = Responsible, **C** = Consulted, **I** = Informed.
+
+| Role                  | Initiation | Planning | Execution | Release | Close & Retro |
+|-----------------------|:----------:|:--------:|:---------:|:-------:|:-------------:|
+| Project Manager       | R          | R        | R         | R       | R             |
+| Product Manager       | R          | R        | C         | C       | C             |
+| Developers            | C          | R        | R         | R       | C             |
+| QA/Testing            | I          | C        | R         | R       | C             |
+| UX Designer           | C          | R        | R         | I       | C             |
+| Release Manager       | I          | C        | C         | R       | C             |
+| Data Analyst          | C          | R        | C         | I       | R             |
+| Site Reliability Eng. | I          | C        | C         | R       | C             |
+| Customer Support Lead | C          | C        | I         | C       | R             |
+
+---
+
+## Role Collaboration Checklist
+
+Use this checklist at each critical project gate to ensure all key personas are involved at the right time.
+
+### Initiation Gate
+- [ ] Project Manager has been assigned and has reviewed the project charter
+- [ ] Product Manager has defined the problem statement and success metrics
+- [ ] Data Analyst has been consulted on metric definition and measurement approach
+- [ ] UX Designer has been informed of scope and user experience considerations
+- [ ] Customer Support Lead has been consulted on known customer pain points
+
+### Planning Gate
+- [ ] All relevant roles have attended the kickoff meeting
+- [ ] UX Designer has provided wireframes or design input for user-facing work
+- [ ] Data Analyst has confirmed instrumentation and tracking requirements
+- [ ] Release Manager has reviewed the release plan and timeline
+- [ ] SRE has been consulted on reliability, scalability, and observability requirements
+
+### Execution Gate (mid-sprint check)
+- [ ] Developers have flagged any technical blockers to the Project Manager
+- [ ] QA has a clear test plan aligned with acceptance criteria
+- [ ] UX Designer has reviewed in-progress UI changes
+- [ ] Data Analyst has confirmed telemetry is being implemented correctly
+
+### Release Gate
+- [ ] Release Manager has confirmed the deployment window and release plan
+- [ ] SRE has verified monitoring and alerting are in place
+- [ ] Customer Support Lead has been briefed on new features and potential support needs
+- [ ] QA has signed off on all acceptance criteria
+
+### Close & Retrospective Gate
+- [ ] Data Analyst has presented post-release metrics
+- [ ] Customer Support Lead has shared initial customer feedback
+- [ ] All roles have contributed retrospective input
+- [ ] Action items have been assigned to owners across roles
+
+---
+
 ## How these personas are used in the exercise
 - Use these persona definitions to frame scenarios and sample interactions in the Skills Exercise.
 - Each persona can be used as a persona prompt for Copilot Spaces to shape role-specific guidance.
-- Reference the Role Interaction Guide to understand how personas collaborate across project phases.
+- Reference the Role Interaction Guide and Role Collaboration Matrix to understand how personas collaborate across project phases.
